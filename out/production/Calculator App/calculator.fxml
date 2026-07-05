@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="264.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator">
+   <top>
+      <HBox prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="display" fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="246.9482421875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutX="10.0" layoutY="81.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Circle fill="#bfbfbf" onMouseClicked="#digitPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#signChanged" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="±">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#dotPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#clearPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#operationPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="÷">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#operationPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="×">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#operationPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Circle fill="#1b6579" onMouseClicked="#operationPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <Circle fill="#377932" onMouseClicked="#equalsPressed" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="#1b6579" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Circle fill="#1b6579" radius="27.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: hand;" />
+                  <Text disable="true" fill="WHITE" mouseTransparent="true" onMouseClicked="#digitPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="?">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
